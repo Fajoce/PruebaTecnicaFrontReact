@@ -12,5 +12,5 @@ el Usuario debera logerase con su no. de cedula y su fecha de nacimiento
 si las credenciales son correctas ingresara al menu principal, donde podra seleccioanr el tipo de servicio medico requerido: General u odontologico
 ![alt text](image-1.png)
 ![alt text](image-2.png)
-Una vez seleccione la cita mas cercana o de acuerdo a sus prioridades para eso debera dar clic en el boton reservar
+Una vez seleccione la cita mas cercana o de acuerdo a sus prioridades se activara y debera dar clic en el boton reservar
 ![alt text](image-3.png)
