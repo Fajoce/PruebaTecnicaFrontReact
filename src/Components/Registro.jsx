@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import '../css/Registro.css'
+
 const Registro = () => {
   const [form, setForm] = useState({
     nombres: '',
@@ -33,14 +35,14 @@ const Registro = () => {
 
   return (
     <div className="container">
-      <h2>Registro de Paciente</h2>
+      <h5>Registro de Paciente</h5>
       <form onSubmit={handleSubmit}>
         <input type="text" name="nombres" placeholder="Nombres" onChange={handleChange} required />
         <input type="text" name="apellidos" placeholder="Apellidos" onChange={handleChange} required />
         <input type="text" name="documento" placeholder="Documento" onChange={handleChange} required />
         <input type="date" name="fechaNacimiento" onChange={handleChange} required />
         <input type="text" name="telefono" placeholder="Teléfono" onChange={handleChange} required />
-        <input type="email" name="email" placeholder="Email" onChange={handleChange} required />
+        <input type="text" name="email" placeholder="Email" onChange={handleChange} required />
         <button type="submit">Registrarse</button>
         <button onClick={volverAlLogin}>Volver al Login</button>
       </form>

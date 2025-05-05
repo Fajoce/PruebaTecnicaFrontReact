@@ -10,7 +10,7 @@ import { Routes, Route } from 'react-router-dom';
 import Registro from './Components/Registro';
 
 const App = () => {
-  const [mostrarRegistro, setMostrarRegistro] = useState(false);
+  //const [mostrarRegistro, setMostrarRegistro] = useState(false);
   const [token, setToken] = useState(localStorage.getItem('token'));
   const pacienteId = localStorage.getItem('pacienteId');
   const nombre = localStorage.getItem('nombre');
