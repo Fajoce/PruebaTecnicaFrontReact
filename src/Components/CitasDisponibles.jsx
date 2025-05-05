@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Select from 'react-select';
 import axios from 'axios';
+import '../css/CitasDisponibles.css'
 
 const handleImprimir = () => {
   const tabla = document.getElementById('tablaCitas');

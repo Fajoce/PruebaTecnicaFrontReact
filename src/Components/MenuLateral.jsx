@@ -11,13 +11,13 @@ const MenuLateral = ({ onNavigate }) => {
           <FaHome /> <span>Inicio</span>
         </li>
         <li onClick={() => onNavigate('pacientes')}>
-          <FaUser /> <span>Pacientes</span>
+          <FaUser /> <span>Ver Mis Datos</span>
         </li>
         <li onClick={() => onNavigate('citas')}>
-          <FaUser /> <span>Citas disponibles</span>
+          <FaUser /> <span>Citas Disponibles</span>
         </li>
         <li onClick={() => onNavigate('miscitas')}>
-          <FaCalendarAlt /> <span>Citas</span>
+          <FaCalendarAlt /> <span>Mis Citas Previas</span>
         </li>
         <li onClick={() => onNavigate('logout')}>
           <FaSignOutAlt /> <span>Cerrar sesión</span>
