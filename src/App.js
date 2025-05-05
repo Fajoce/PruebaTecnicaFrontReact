@@ -8,6 +8,7 @@ const App = () => {
   const [token, setToken] = useState(localStorage.getItem('token'));
   const pacienteId = localStorage.getItem('pacienteId');
   const nombre = localStorage.getItem('nombre');
+  const [currentSection, setCurrentSection] = useState('inicio'); // Sección actual
 
   useEffect(() => {
     if (token) {
@@ -16,13 +17,42 @@ const App = () => {
     }
   }, [token]);
 
+    const handleNavigation = (section) => {
+      if (section === 'logout') {
+        // Cerrar sesión
+        alert('¿Realmenet quieres salir')
+        setToken(null);
+        localStorage.removeItem('token');
+        localStorage.removeItem('pacienteId');
+        localStorage.removeItem('nombre');
+      } else {
+        setCurrentSection(section);
+      }
+    };
+ 
+  const renderSection = () => {
+    switch (currentSection) {
+      case 'inicio':
+        return <h2>Bienvenido, {nombre}</h2>;
+      case 'citas':
+        return <CitasDisponibles />;
+      case 'pacientes':
+        return <p>Sección de pacientes (por implementar)</p>; // Puedes crear un componente aquí
+      default:
+        return <h2>Sección no encontrada</h2>;
+    }
+  };
+
+  
+
   return (
     <div>
       {token ? (
         
         <><h4>Ud esta en el sistema como: {nombre} - Id: {pacienteId} </h4><div>
+          {renderSection()}
           <CitasDisponibles></CitasDisponibles>
-          <MenuLateral></MenuLateral>
+          <MenuLateral onNavigate={handleNavigation} />
         </div></>
       ) : (
         <Login setToken={setToken} />

@@ -6,9 +6,12 @@ body {
     background-color:aliceblue;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('./img/images.jpeg');
+  /*background-image: url('./img/images.jpeg');
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: fixed;*/
+}
+.tr, .tbody{
+  background-color: #f1f1f1;
 }
 
 code {

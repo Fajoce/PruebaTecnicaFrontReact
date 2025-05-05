@@ -116,7 +116,7 @@ const CitasDisponibles = () => {
           <h3>Citas Disponibles</h3>
           <table className='styles.table' id="tablaCitas">
             <thead>
-              <tr>
+              <tr className='tr'>
                 <th>Id</th>
                 <th>Medico</th>
                 <th>Especialidad</th>
@@ -124,7 +124,7 @@ const CitasDisponibles = () => {
                 <th>Acción</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody className='tbody'>
               {citas.map((cita) => (
                 <tr key={cita.id}>
                   <td>{cita.id}</td>
