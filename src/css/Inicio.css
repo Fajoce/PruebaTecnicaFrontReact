@@ -10,7 +10,9 @@
     font-weight: bold;
     margin-bottom: 10px;
   }
-  
+  p{
+    background-color: rgba(0, 0, 0, 0.6);
+  }
   .inicio-description {
     text-align: center;
     font-size: 1.1rem;

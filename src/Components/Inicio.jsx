@@ -1,12 +1,12 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
-//import '../css/Inicio.css'
+import '../css/Inicio.css'
 
 const Inicio = () => {
   return (
     <div style={{ padding: '20px' }} className='container'>
       <h2>Bienvenido a nuestra Clínica</h2>
-      <p>Ofrecemos servicios de medicina general y odontología con profesionales altamente capacitados.</p>
+      <h6>Ofrecemos servicios de medicina general y odontología con profesionales altamente capacitados.</h6>
 
       <Carousel fade>
         <Carousel.Item>
