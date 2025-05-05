@@ -14,7 +14,7 @@ const MenuLateral = ({ onNavigate }) => {
           <FaUser /> <span>Ver Mis Datos</span>
         </li>
         <li onClick={() => onNavigate('citas')}>
-          <FaUser /> <span>Citas Disponibles</span>
+        <FaCalendarAlt /> <span>Citas Disponibles</span>
         </li>
         <li onClick={() => onNavigate('miscitas')}>
           <FaCalendarAlt /> <span>Mis Citas Previas</span>

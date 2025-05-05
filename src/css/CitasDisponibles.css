@@ -12,7 +12,7 @@
     color: #2c3e50;
   }
   
-  .table {
+  table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 1rem;
@@ -22,23 +22,23 @@
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   }
   
-  .table th,
-  .table td {
+  table th,
+  table td {
     padding: 12px 15px;
     text-align: left;
     border-bottom: 1px solid #ddd;
   }
   
-  .table th {
+  table th {
     background-color: #3498db;
     color: white;
   }
   
-  .table tr:hover {
+  table tr:hover {
     background-color: #f1f1f1;
   }
   
-  .button {
+  button {
     padding: 8px 12px;
     background-color: #2980b9;
     color: white;
@@ -47,7 +47,7 @@
     cursor: pointer;
   }
   
-  .button:hover {
+  button:hover {
     background-color: #1c5980;
   }
   
@@ -62,11 +62,15 @@
     cursor: pointer;
   }
   
-  .buttonReservar:disabled {
+  buttonReservar:disabled {
     background-color: #ccc;
     cursor: not-allowed;
   }
   
   .buttonReservar:hover:enabled {
     background-color: #1e8449;
-  }
+ }
+ .buttonImprimir{
+  float: right;
+  background-color: rgb(2, 2, 54);
+ }

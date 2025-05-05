@@ -114,10 +114,10 @@ const CitasDisponibles = () => {
       {error && <p>{error}</p>}
       {citas.length > 0 && (
         <div>
-          <h3>Citas Disponibles</h3>
-          <table className='styles.table' id="tablaCitas">
+          <h5>Citas Disponibles</h5>
+          <table className='table' id="tablaCitas">
             <thead>
-              <tr className='tr'>
+              <tr>
                 <th>Id</th>
                 <th>Medico</th>
                 <th>Especialidad</th>
@@ -125,7 +125,7 @@ const CitasDisponibles = () => {
                 <th>Acción</th>
               </tr>
             </thead>
-            <tbody className='tbody'>
+            <tbody>
               {citas.map((cita) => (
                 <tr key={cita.id}>
                   <td>{cita.id}</td>
@@ -151,7 +151,7 @@ const CitasDisponibles = () => {
           >
             Reservar Cita
           </button>
-          <button className="buttonReservar" onClick={handleImprimir}>
+          <button className="buttonImprimir" onClick={handleImprimir}>
            Imprimir tabla
           </button>
         </div>

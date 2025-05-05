@@ -26,7 +26,7 @@ const MisCitas = () => {
 
   return (
     <div className='container'>
-      <h2>Mis Citas</h2>
+      <h5>Mis últimas tres (3) Citas</h5>
       {citas.length === 0 ? (
         <p>No tienes citas registradas.</p>
       ) : (
