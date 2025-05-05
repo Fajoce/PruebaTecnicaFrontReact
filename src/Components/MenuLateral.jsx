@@ -14,6 +14,9 @@ const MenuLateral = ({ onNavigate }) => {
           <FaUser /> <span>Pacientes</span>
         </li>
         <li onClick={() => onNavigate('citas')}>
+          <FaUser /> <span>Citas disponibles</span>
+        </li>
+        <li onClick={() => onNavigate('miscitas')}>
           <FaCalendarAlt /> <span>Citas</span>
         </li>
         <li onClick={() => onNavigate('logout')}>

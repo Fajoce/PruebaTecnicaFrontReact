@@ -3,6 +3,7 @@ import Login from './Components/Login';
 import CitasDisponibles from './Components/CitasDisponibles';
 import axios from 'axios';
 import MenuLateral from './Components/MenuLateral';
+import MisCitas from './Components/MisCitas';
 
 const App = () => {
   const [token, setToken] = useState(localStorage.getItem('token'));
@@ -45,7 +46,9 @@ const App = () => {
         return <CitasDisponibles />;
       case 'pacientes':
         return <p>Sección de pacientes (por implementar)</p>; // Puedes crear un componente aquí
-        case 'logout':
+        case 'miscitas':
+      return <MisCitas />;
+      case 'logout':
         return <p></p>;
       default:
         return <h2>Sección no encontrada</h2>;
@@ -60,7 +63,7 @@ const App = () => {
         
         <><h4>Ud esta en el sistema como: {nombre} - Id: {pacienteId} </h4><div>
           {renderSection()}
-          <CitasDisponibles></CitasDisponibles>
+          
           <MenuLateral onNavigate={handleNavigation} />
         </div></>
       ) : (
