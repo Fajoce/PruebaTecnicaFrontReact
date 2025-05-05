@@ -6,8 +6,11 @@ import MenuLateral from './Components/MenuLateral';
 import MisCitas from './Components/MisCitas';
 import Inicio from './Components/Inicio';
 import Pacientes from './Components/Pacientes'
+import { Routes, Route } from 'react-router-dom';
+import Registro from './Components/Registro';
 
 const App = () => {
+  const [mostrarRegistro, setMostrarRegistro] = useState(false);
   const [token, setToken] = useState(localStorage.getItem('token'));
   const pacienteId = localStorage.getItem('pacienteId');
   const nombre = localStorage.getItem('nombre');
@@ -56,26 +59,28 @@ const App = () => {
         return <h2>Sección no encontrada</h2>;
     }
   };
+  // 👇 SOLO mostrar rutas Login / Registro si NO hay token
+  if (!token) {
+    return (
+      <Routes>
+        <Route path="/" element={<Login setToken={setToken} />} />
+        <Route path="/registro" element={<Registro />} />
+      </Routes>
+    );
+  }
 
   
 
   return (
     <div>
-      {token ? (
-        
-        <><marquee><h5>Ud esta en el sistema como: {nombre} - Id: {pacienteId} </h5></marquee><div>
-          {renderSection()}
-          
-          <MenuLateral onNavigate={handleNavigation} />
-        </div></>
-      ) : (
-        <Login setToken={setToken} />
-       
-      )}
-    
-      
+          <div>
+      <marquee><h5>Ud está en el sistema como: {nombre} - Id: {pacienteId}</h5></marquee>
+      {renderSection()}
+      <MenuLateral onNavigate={handleNavigation} />
+    </div>
     </div>
   );
+
 };
 
 export default App;

@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import '../css/Login.Module.css'
-
+import { useNavigate } from 'react-router-dom';
 
 const Login = ({ setToken }) => {
   const [documento, setDocumento] = useState('');
   const [fechaNacimiento, setFechaNacimiento] = useState('');
   const [error, setError] = useState('');
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -50,6 +51,8 @@ const Login = ({ setToken }) => {
         <button className='buttom' type="submit">Iniciar sesión</button>
       </form>
       {error && <p>{error}</p>}
+      <hr />
+      <p>¿No tienes cuenta? <button onClick={() => navigate('/registro')} className="link-button">Crear cuenta</button></p>
     </div>
   );
 };
