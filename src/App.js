@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Login from './Components/Login';
 import CitasDisponibles from './Components/CitasDisponibles';
 import axios from 'axios';
+import MenuLateral from './Components/MenuLateral';
 
 const App = () => {
   const [token, setToken] = useState(localStorage.getItem('token'));
@@ -21,6 +22,7 @@ const App = () => {
         
         <><h4>Ud esta en el sistema como: {nombre} - Id: {pacienteId} </h4><div>
           <CitasDisponibles></CitasDisponibles>
+          <MenuLateral></MenuLateral>
         </div></>
       ) : (
         <Login setToken={setToken} />

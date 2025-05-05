@@ -2,6 +2,40 @@ import React, { useState } from 'react';
 import Select from 'react-select';
 import axios from 'axios';
 
+const handleImprimir = () => {
+  const tabla = document.getElementById('tablaCitas');
+  const ventana = window.open('', '_blank', 'width=800,height=600');
+  
+  ventana.document.write(`
+    <html>
+      <head>
+        <title>Impresión de Citas</title>
+        <style>
+          table {
+            width: 100%;
+            border-collapse: collapse;
+          }
+          th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: left;
+          }
+          h2 {
+            text-align: center;
+          }
+        </style>
+      </head>
+      <body>
+        <h2>Listado de Citas Reservadas</h2>
+        ${tabla.outerHTML}
+      </body>
+    </html>
+  `);
+
+  ventana.document.close();
+  ventana.print();
+};
+
 const CitasDisponibles = () => {
 
   const [especialidadSeleccionada, setEspecialidadSeleccionada] = useState(null);
@@ -80,7 +114,7 @@ const CitasDisponibles = () => {
       {citas.length > 0 && (
         <div>
           <h3>Citas Disponibles</h3>
-          <table className='styles.table'>
+          <table className='styles.table' id="tablaCitas">
             <thead>
               <tr>
                 <th>Id</th>
@@ -115,6 +149,9 @@ const CitasDisponibles = () => {
             disabled={!citaSeleccionada}
           >
             Reservar Cita
+          </button>
+          <button className="buttonReservar" onClick={handleImprimir}>
+           Imprimir tabla
           </button>
         </div>
       )}
