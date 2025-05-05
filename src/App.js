@@ -20,12 +20,19 @@ const App = () => {
     const handleNavigation = (section) => {
       if (section === 'logout') {
         // Cerrar sesión
-        alert('¿Realmenet quieres salir')
+       // eslint-disable-next-line no-restricted-globals
+       let response = confirm('¿Realmenet quieres salir')
+       if (response){
         setToken(null);
         localStorage.removeItem('token');
         localStorage.removeItem('pacienteId');
         localStorage.removeItem('nombre');
-      } else {
+      }
+      else{
+        alert('Ok, gracias por continuar en el sistema')
+      }
+    }
+      else {
         setCurrentSection(section);
       }
     };
@@ -38,6 +45,8 @@ const App = () => {
         return <CitasDisponibles />;
       case 'pacientes':
         return <p>Sección de pacientes (por implementar)</p>; // Puedes crear un componente aquí
+        case 'logout':
+        return <p></p>;
       default:
         return <h2>Sección no encontrada</h2>;
     }

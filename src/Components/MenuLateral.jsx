@@ -1,5 +1,5 @@
 import React from 'react';
-//import './Sidebar.css';
+import '../css/SideBar.css';
 import { FaHome, FaUser, FaCalendarAlt, FaSignOutAlt } from 'react-icons/fa';
 
 const MenuLateral = ({ onNavigate }) => {
