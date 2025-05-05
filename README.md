@@ -10,7 +10,8 @@ Instalar
 el Usuario debera logerase con su no. de cedula y su fecha de nacimiento
 ![alt text](image.png)
 si las credenciales son correctas ingresara al menu principal, donde podra seleccioanr el tipo de servicio medico requerido: General u odontologico
-![image](https://github.com/user-attachments/assets/68623d51-9381-47f5-b397-685d57d11909)
+![image](https://github.com/user-attachments/assets/8e36507a-10a7-436f-bf32-a4905a3f0aaf)
+
 ![alt text](image-2.png)
 Una vez seleccione la cita mas cercana o de acuerdo a sus prioridades se activara y debera dar clic en el boton reservar
 ![alt text](image-3.png)
