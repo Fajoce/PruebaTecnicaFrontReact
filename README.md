@@ -8,9 +8,17 @@ Instalar
 
 #Ingreso al sistema
 el Usuario debera logerase con su no. de cedula y su fecha de nacimiento
-![alt text](image.png)
+![image](https://github.com/user-attachments/assets/795baf90-defb-4b4f-8c1e-930ea491d7fe)
+
 si las credenciales son correctas ingresara al menu principal, donde podra seleccioanr el tipo de servicio medico requerido: General u odontologico
-![image](https://github.com/user-attachments/assets/68623d51-9381-47f5-b397-685d57d11909)
-![alt text](image-2.png)
+![image](https://github.com/user-attachments/assets/9b0c28fa-7d45-4b86-95f8-0b3204c4e9fb)
+
 Una vez seleccione la cita mas cercana o de acuerdo a sus prioridades se activara y debera dar clic en el boton reservar
-![alt text](image-3.png)
+![image](https://github.com/user-attachments/assets/cce08cd2-c9f2-477e-bfbd-9b835054a1e4)
+
+#podra imprimir la tabla de citas disponibles si lo desea
+![image](https://github.com/user-attachments/assets/6e5f7343-d9f8-4920-bd96-c7e351764a5c)
+# el usuario podra cerrar la sesion cuando guste
+![image](https://github.com/user-attachments/assets/083f81f0-4b51-4966-ab36-2bc78c124c4b)
+
+
