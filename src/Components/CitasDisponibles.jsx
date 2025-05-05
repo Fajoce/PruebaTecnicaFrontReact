@@ -122,6 +122,7 @@ const CitasDisponibles = () => {
                 <th>Medico</th>
                 <th>Especialidad</th>
                 <th>Fecha y Hora</th>
+                <th>Consultorio</th>
                 <th>Acción</th>
               </tr>
             </thead>
@@ -132,6 +133,7 @@ const CitasDisponibles = () => {
                   <td>{cita.nombremedico}</td>
                   <td>{cita.especialidad}</td>
                   <td>{new Date(cita.fechahora).toLocaleString()}</td>
+                  <td>{cita.noConsultorio}</td>
                   <td>
                     <button
                       className='button'
