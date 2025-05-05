@@ -103,7 +103,7 @@ const CitasDisponibles = () => {
 
   return (
     <div className='container'>
-      <h2>Seleccionar Especialidad</h2>
+      <h5>Seleccionar Especialidad</h5>
       <Select
         options={opcionesEspecialidades}
         onChange={handleEspecialidadChange}

@@ -31,7 +31,7 @@ const Paciente = () => {
 
   return (
     <div className='container'>
-      <h2>Datos del Paciente</h2>
+      <h5>Datos del Paciente</h5>
       <p><strong>ID:</strong> {paciente.id}</p>
       <p><strong>Nombres:</strong> {paciente.nombres}</p>
       <p><strong>Apellidos:</strong> {paciente.apellidos}</p>

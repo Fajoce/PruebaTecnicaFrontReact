@@ -63,7 +63,7 @@ const App = () => {
     <div>
       {token ? (
         
-        <><marquee><h4>Ud esta en el sistema como: {nombre} - Id: {pacienteId} </h4></marquee><div>
+        <><marquee><h5>Ud esta en el sistema como: {nombre} - Id: {pacienteId} </h5></marquee><div>
           {renderSection()}
           
           <MenuLateral onNavigate={handleNavigation} />
