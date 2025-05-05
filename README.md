@@ -19,10 +19,10 @@ el Usuario debera logerase con su no. de cedula y su fecha de nacimiento
 # El paciente tendra la opcion de ver sus citas previas con el resultado de las mismas
 ![image](https://github.com/user-attachments/assets/55a732ed-a5fb-47d7-a03b-d8e3be14fb49)
 
-
-#podra imprimir la tabla de citas disponibles si lo desea
-![image](https://github.com/user-attachments/assets/6e5f7343-d9f8-4920-bd96-c7e351764a5c)
 # el usuario podra cerrar la sesion cuando guste
 ![image](https://github.com/user-attachments/assets/083f81f0-4b51-4966-ab36-2bc78c124c4b)
+
+# Podra imprimir la tabla de citas disponibles si lo desea
+![image](https://github.com/user-attachments/assets/6e5f7343-d9f8-4920-bd96-c7e351764a5c)
 
 
