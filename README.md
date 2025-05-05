@@ -18,4 +18,7 @@ Una vez seleccione la cita mas cercana o de acuerdo a sus prioridades se activar
 
 #podra imprimir la tabla de citas disponibles si lo desea
 ![image](https://github.com/user-attachments/assets/6e5f7343-d9f8-4920-bd96-c7e351764a5c)
+# el usuario podra cerrar la sesion cuando guste
+![image](https://github.com/user-attachments/assets/083f81f0-4b51-4966-ab36-2bc78c124c4b)
+
 
