@@ -28,7 +28,7 @@
   }
   
   .btn-registrar,
-  .btn-volver {
+  .volver {
     width: 100%;
     padding: 10px;
     margin-top: 8px;
@@ -43,9 +43,10 @@
     color: white;
   }
   
-  .btn-volver {
-    background-color: #6c757d;
+  .volver {
+    background-color: blue;
     color: white;
+    float:right
   }
   
   .btn-registrar:hover {

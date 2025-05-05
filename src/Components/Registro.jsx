@@ -44,7 +44,7 @@ const Registro = () => {
         <input type="text" name="telefono" placeholder="Teléfono" onChange={handleChange} required />
         <input type="text" name="email" placeholder="Email" onChange={handleChange} required />
         <button type="submit">Registrarse</button>
-        <button onClick={volverAlLogin}>Volver al Login</button>
+        <button onClick={volverAlLogin} className='volver'>Volver al Login</button>
       </form>
       {mensaje && <p>{mensaje}</p>}
     </div>
