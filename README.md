@@ -15,3 +15,6 @@ si las credenciales son correctas ingresara al menu principal, donde podra selec
 ![alt text](image-2.png)
 Una vez seleccione la cita mas cercana o de acuerdo a sus prioridades se activara y debera dar clic en el boton reservar
 ![alt text](image-3.png)
+#podra imprimir la tabla de citas disponibles si lo desea
+![image](https://github.com/user-attachments/assets/6e5f7343-d9f8-4920-bd96-c7e351764a5c)
+
