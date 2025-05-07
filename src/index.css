@@ -22,13 +22,14 @@ code {
 .container {
   font-family: 'Arial', sans-serif;
   margin: 10;
+  padding-right: 30px;
   padding: 30px;
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 550px; /* Ancho máximo ajustado */
-  height: auto;
+  max-width: 1000px; /* Ancho máximo ajustado */
+  height: 600px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;

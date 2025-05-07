@@ -16,6 +16,8 @@ const App = () => {
   const nombre = localStorage.getItem('nombre');
   const [currentSection, setCurrentSection] = useState('inicio'); // Sección actual
 
+
+
   useEffect(() => {
     if (token) {
       // Configura el encabezado Authorization para futuras solicitudes
@@ -27,7 +29,7 @@ const App = () => {
       if (section === 'logout') {
         // Cerrar sesión
        // eslint-disable-next-line no-restricted-globals
-       let response = confirm('¿Realmenet quieres salir')
+       let response = confirm('¿Realmenet quieres salir?')
        if (response){
         setToken(null);
         localStorage.removeItem('token');
@@ -74,7 +76,8 @@ const App = () => {
   return (
     <div>
           <div>
-      <marquee><h5>Ud está en el sistema como: {nombre} - Id: {pacienteId}</h5></marquee>
+      <marquee><h5>Ud está en el sistema como: {nombre} - Id: {pacienteId} </h5></marquee>
+      
       {renderSection()}
       <MenuLateral onNavigate={handleNavigation} />
     </div>

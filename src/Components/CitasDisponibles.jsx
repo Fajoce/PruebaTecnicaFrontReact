@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, {  useState } from 'react';
 import Select from 'react-select';
 import axios from 'axios';
 import '../css/CitasDisponibles.css'
+
 
 const handleImprimir = () => {
   const tabla = document.getElementById('tablaCitas');
@@ -32,10 +33,10 @@ const handleImprimir = () => {
       </body>
     </html>
   `);
-
   ventana.document.close();
   ventana.print();
 };
+
 
 const CitasDisponibles = () => {
 
@@ -50,11 +51,13 @@ const CitasDisponibles = () => {
     { value: 'Examen odontologico', label: 'Examen odontologico' }
   ];
 
+ 
+ 
   const handleEspecialidadChange = async (selectedOption) => {
     setEspecialidadSeleccionada(selectedOption);
     setLoading(true);
     setError(null);
-
+  
     try {
       const response = await axios.get('https://localhost:7292/api/Citas/disponibles', {
         params: { especialidad: selectedOption.value }
@@ -65,7 +68,7 @@ const CitasDisponibles = () => {
       console.error(error);
     } finally {
       setLoading(false);
-    }
+    }  
   };
 
   const handleSeleccionarCita = (cita) => {
@@ -94,12 +97,14 @@ const CitasDisponibles = () => {
       alert('Cita reservada con éxito');
       alert(pacienteId, citaId)
     } catch (error) {
-      alert(pacienteId, citaId)
-      console.log('Cita: '+citaId, 'Paciente: '+pacienteId)
+     // alert(pacienteId, citaId)
+     // console.log('Cita: '+citaId, 'Paciente: '+pacienteId)
       alert('Error al reservar la cita');
       console.error(error);
     }
   };
+  
+
 
   return (
     <div className='container'>
@@ -160,6 +165,7 @@ const CitasDisponibles = () => {
       )}
     </div>
   );
+
   };
 
 
